@@ -1,0 +1,545 @@
+:root {
+    /* bg colors */
+    --background: #02050e;
+    --color1: #1d1723;
+    --color2: #262276;
+    --color3: #932830;
+  
+
+    /* Text colors */
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*boton animado*/
+
+#boton-anim{
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#boton-anim span{
+    position: absolute;
+    background-color: black;
+    transition: 0.5s;
+}
+
+#boton-anim span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+}
+
+
+#boton-anim span:nth-child(2){
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;;
+}
+
+
+#boton-anim span:nth-child(3){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+
+
+#boton-anim span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#boton-anim:hover span:nth-child(1){
+    left: -100%;
+}
+
+#boton-anim:hover span:nth-child(2){
+    top: -100%;
+}
+
+#boton-anim:hover span:nth-child(3){
+    left: 100%;
+}
+
+#boton-anim:hover span:nth-child(4){
+    bottom: -100%;
+}
+
+/*login-----------------------------------------------------------------------*/
+body{
+    background-color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#login-logo{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+#login-logo img{
+    width: 250px;
+    height: 250px;
+}
+
+#login-form{
+    background-color: white;
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 80px;
+}
+
+#login-form p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#login-form input{
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid grey;
+}
+
+#login-form button{
+    font-size: 16px;
+}
+
+#checkbox1{
+    display: flex;
+    gap: 8px;
+}
+
+
+/*pc*/
+@media (max-width: 1020px ){
+     /*boton animado*/
+
+    #boton-anim{
+        position: relative;
+        padding: 10px 15px;
+        border: none;
+        background: white;
+        color: black;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    #boton-anim span{
+        position: absolute;
+        background-color: black;
+        transition: 0.5s;
+    }
+
+    #boton-anim span:nth-child(1){
+        width: 100%;
+        height: 1px;
+        top: 0;
+        left: 0;
+    }
+
+
+    #boton-anim span:nth-child(2){
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 0;;
+    }
+
+
+    #boton-anim span:nth-child(3){
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    #boton-anim span:nth-child(4){
+        width: 1px;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    #boton-anim:hover span:nth-child(1){
+        left: -100%;
+    }
+
+    #boton-anim:hover span:nth-child(2){
+        top: -100%;
+    }
+
+    #boton-anim:hover span:nth-child(3){
+        left: 100%;
+    }
+
+    #boton-anim:hover span:nth-child(4){
+        bottom: -100%;
+    }
+
+    /*login-----------------------------------------------------------------------*/
+    body{
+        background-color: white;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    #login-logo{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    #login-logo img{
+        width: 250px;
+        height: 250px;
+    }
+
+    #login-form{
+        background-color: white;
+        width: 50%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 80px;
+    }
+
+    #login-form p{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    #login-form input{
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        transition: all .3s;
+        border-bottom: 2px solid grey;
+    }
+
+    #login-form button{
+        font-size: 16px;
+    }
+
+    #checkbox1{
+        display: flex;
+        gap: 8px;
+    }
+
+}
+
+
+/*tablet*/
+@media (max-width: 768px ){
+    /*boton animado*/
+
+    #boton-anim{
+        position: relative;
+        padding: 10px 15px;
+        border: none;
+        background: white;
+        color: black;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    #boton-anim span{
+        position: absolute;
+        background-color: black;
+        transition: 0.5s;
+    }
+
+    #boton-anim span:nth-child(1){
+        width: 100%;
+        height: 1px;
+        top: 0;
+        left: 0;
+    }
+
+
+    #boton-anim span:nth-child(2){
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 0;;
+    }
+
+
+    #boton-anim span:nth-child(3){
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    #boton-anim span:nth-child(4){
+        width: 1px;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    #boton-anim:hover span:nth-child(1){
+        left: -100%;
+    }
+
+    #boton-anim:hover span:nth-child(2){
+        top: -100%;
+    }
+
+    #boton-anim:hover span:nth-child(3){
+        left: 100%;
+    }
+
+    #boton-anim:hover span:nth-child(4){
+        bottom: -100%;
+    }
+
+    /*login-----------------------------------------------------------------------*/
+    body{
+        background-color: white;
+    }
+
+    main{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    #login-logo{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+        height: 100vh;
+    }
+
+    #login-logo img{
+        width: 170px;
+        height: 170px;
+    }
+
+    #login-form{
+        background-color: white;
+        width: 50%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 80px;
+    }
+
+    #login-form p{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    #login-form input{
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        transition: all .3s;
+        border-bottom: 2px solid grey;
+    }
+
+    #login-form button{
+        font-size: 16px;
+    }
+
+    #checkbox1{
+        display: flex;
+        gap: 8px;
+    }
+
+}
+
+
+/*celular*/
+@media (max-width: 600px ){
+    /*boton animado*/
+
+    #boton-anim{
+        position: relative;
+        padding: 10px 15px;
+        border: none;
+        background: white;
+        color: black;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    #boton-anim span{
+        position: absolute;
+        background-color: black;
+        transition: 0.5s;
+    }
+
+    #boton-anim span:nth-child(1){
+        width: 100%;
+        height: 1px;
+        top: 0;
+        left: 0;
+    }
+
+
+    #boton-anim span:nth-child(2){
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 0;;
+    }
+
+
+    #boton-anim span:nth-child(3){
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    #boton-anim span:nth-child(4){
+        width: 1px;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    #boton-anim:hover span:nth-child(1){
+        left: -100%;
+    }
+
+    #boton-anim:hover span:nth-child(2){
+        top: -100%;
+    }
+
+    #boton-anim:hover span:nth-child(3){
+        left: 100%;
+    }
+
+    #boton-anim:hover span:nth-child(4){
+        bottom: -100%;
+    }
+
+    /*login-----------------------------------------------------------------------*/
+    body{
+        background-color: white;
+    }
+
+    main{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    #login-logo{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35vw;
+        height: 100vh;
+    }
+
+    #login-logo img{
+        width: 150px;
+        height: 150px;
+    }
+
+    #login-form{
+        background-color: white;
+        width: 50%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 80px;
+    }
+
+    #login-form p{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    #login-form input{
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        transition: all .3s;
+        border-bottom: 2px solid grey;
+    }
+
+    #login-form button{
+        font-size: 16px;
+    }
+
+    #checkbox1{
+        display: flex;
+        gap: 8px;
+    }
+
+}
